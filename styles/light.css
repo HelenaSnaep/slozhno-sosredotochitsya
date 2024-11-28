@@ -16,6 +16,7 @@
   --accent-color: #FF8DCB;
   --accent-text-color: #353430;
   --accent-title-color: #ff0070;
+  --nav-hover-color: rgba(50, 49, 45, 0.4);
   background-image: url(../images/cover-image-light.png);
 }
 
@@ -34,6 +35,7 @@
     --accent-color: #FF8DCB;
     --accent-text-color: #353430;
     --accent-title-color: #ff0070;
+    --nav-hover-color: rgba(50, 49, 45, 0.4);
     --font-size: 18px;
   }
 

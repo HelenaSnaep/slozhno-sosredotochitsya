@@ -26,6 +26,8 @@
   display: grid;
   grid-auto-rows: 1fr min-content 1fr;
   align-items: center;
+  min-block-size: 668px;
+  block-size: 100vh;
 }
 
 .decorated-zone {
@@ -107,8 +109,7 @@
   cursor: pointer;
 }
 
-.header__theme-menu-button:hover {
-  --nav-hover-color: rgb(255 0 112 / 0.4);
+.header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
   border: 1px solid var(--nav-hover-color);
 }
 
@@ -142,7 +143,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: var(--main-gap);
+  gap: var(--main-gap, 50px);
 }
 
 .section,
@@ -162,7 +163,7 @@
   gap: 10px;
 }
 
-.section__subheading--font-regular {
+.section__subheading-font-regular {
   font-weight: 400;
 }
 
@@ -180,7 +181,7 @@
 }
 
 .content__link:focus-visible {
-  border-block-end: 1px solid currentColor;
+  outline: 1px solid currentColor;
 }
 
 .gallery,
